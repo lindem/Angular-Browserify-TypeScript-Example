@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!--
+    you *could* bundle angular through browserify. But that wouldn't take
+    advantage of CDNs, which IMO outweigh the advantage of expressly bundling
+    angular with your application alone.
+
+    Also, to prevent flickering templates ("FOUC" or "MOBI" problem), We'll load
+    Angular in the head element, as is recommended by their site and bundle a
+    very small css file explicitly hiding these elements.
+    -->
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="http://code.angularjs.org/1.2.6/angular.js"></script>
+</head>
+<body>
+<div id="main" data-ng-app="TestApp">
+    <div data-ng-controller="TestCtrl">
+        <label for="edit">New Item:</label>
+        <input id="edit" type="text" data-ng-model="edit"/>
+        <button data-ng-click="addItem()">Append to List</button>
+        <ul data-ng-cloak="">
+            <li data-ng-repeat="item in items">{{item}}</li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="./build.js"></script>
+
+</body>
+</html>

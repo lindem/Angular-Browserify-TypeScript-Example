@@ -1,0 +1,7 @@
+/*
+    this rule hides all elements which are marked with the ng-cloak directive.
+ */
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Angular-TS-Browserify-Example",
+    "license": "MIT",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": ""
+    },
+
+    "dependencies": {
+        "angular": "latest"
+    },
+
+    "devDependencies": {
+        "mocha": "~1.15.1",
+        "browserify": "~2.36.1",
+        "grunt-mocha-phantomjs": "~0.3.1",
+        "grunt-mocha-test": "~0.8.1",
+        "grunt-cli": "~0.1.11",
+        "grunt": "~0.4.2",
+        "grunt-ts": "~1.4.5",
+        "grunt-contrib-clean": "~0.5.0",
+        "grunt-contrib-connect": "latest",
+        "grunt-browserify": "~1.2.11"
+    }
+}
