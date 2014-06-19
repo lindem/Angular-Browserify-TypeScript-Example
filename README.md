@@ -1,10 +1,10 @@
 # Angular with TypeScript and Browserify example
 > You need node.js to run this. I wrote this with IDEA and its TS plugin on
-> Linux; I do not know if this example works on Windows, as I never developed
-> JS with it.
+> Linux, but it was reported to work on windows as well; thanks to 
+> [@HansS](https://github.com/HansS) for that. 
 
 This example does nothing useful, it's purely for structure illustration
-purposes. 
+purposes.
 
 The following structure is provided for your amusement:
 
